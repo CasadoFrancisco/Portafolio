@@ -16,7 +16,7 @@ const ContainerInicio = styled.div`
    font-family: "Inconsolata", monospace;
   background-color: #023e8a;
   height: 100vh;
-  width: 100vw;
+  
   margin-left: 500px; 
 `;
 const ContainerName = styled.div`
