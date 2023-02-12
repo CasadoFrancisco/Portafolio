@@ -3,7 +3,7 @@ import styled from "styled-components";
 import LogoPortada from "../assets/LogoPortafolio.jpeg";
 
 const NavbarContainer = styled.div`
-  @media (max-width: 400px) {
+  @media (max-width: 1000px) {
     background-color: #0077b6;
     display: flex;
     flex-direction: row;
@@ -13,7 +13,7 @@ const NavbarContainer = styled.div`
     position: fixed;
     width: 100%;
   }
-  @media (max-width: 800px) {
+  /* @media (max-width: 800px) {
     background-color: #0077b6;
     display: flex;
     flex-direction: row;
@@ -22,7 +22,7 @@ const NavbarContainer = styled.div`
     justify-content: space-between;
     position: fixed;
     width: 100%;
-  }
+  } */
   background-color: #0077b6;
   display: flex;
   flex-direction: column;

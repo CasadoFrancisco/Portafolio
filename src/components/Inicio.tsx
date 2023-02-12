@@ -2,7 +2,7 @@ import React, { useCallback } from "react";
 import styled from "styled-components";
 
 const ContainerInicio = styled.div`
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     display: flex;
     flex-direction: column;
     padding-top: 110px;
@@ -19,7 +19,7 @@ const ContainerInicio = styled.div`
 
 `;
 const ContainerName = styled.div`
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     width: 100%;
     padding-left: 14%;
     padding-top: 80px;
@@ -33,7 +33,7 @@ const ContainerName = styled.div`
  
 `;
 const NameOne = styled.h1`
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     font-size: 80px;
     color: #90e0ef;
   }
@@ -45,7 +45,7 @@ const NameOne = styled.h1`
 
 `;
 const NameTwo = styled.h1`
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     font-size: 80px;
     color: #ffba08;
   }
@@ -55,7 +55,7 @@ const NameTwo = styled.h1`
   width:420px;
 `;
 const ContainerBienvenido = styled.div`
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
     display: flex;
     margin-top: 70px;
@@ -76,7 +76,7 @@ const ContainerBienvenido = styled.div`
  
 `;
 const ParrafoOne = styled.p`
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     font-size: 30px;
     font-weight: 700;
     color: white;
@@ -88,7 +88,7 @@ const ParrafoOne = styled.p`
   color: #90e0ef;
 `;
 const ParrafoTwo = styled.a`
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     font-size: 50px;
     padding-right: 80px;
     font-weight: 800;
@@ -98,12 +98,8 @@ const ParrafoTwo = styled.a`
     margin-top: 30px;
    padding-left: 1px;
   }
-  font-size: 50px;
   margin-top: 35px;
-  font-weight: 900;
   padding-left: 15px;
-  color: #02c39a;
-  font-family: "Inconsolata", monospace;
   width: 330px;
 `;
 
