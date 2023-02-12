@@ -3,6 +3,16 @@ import styled from "styled-components";
 import LogoPortada from "../assets/LogoPortafolio.jpeg";
 
 const NavbarContainer = styled.div`
+  @media (max-width: 400px) {
+    background-color: #0077b6;
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+  }
   @media (max-width: 800px) {
     background-color: #0077b6;
     display: flex;
@@ -10,32 +20,39 @@ const NavbarContainer = styled.div`
     height: 110px;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-  }
-  @media (min-width: 801px) {
-    background-color: #0077b6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    min-width: 366px;
-    width: 26%;
-    font-family: "Inconsolata", monospace;
-    font-size: 23px;
-    font-weight: bold;
     position: fixed;
+    width: 100%;
   }
+  background-color: #0077b6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 500px;
+  font-family: "Inconsolata", monospace;
+  font-size: 23px;
+  font-weight: bold;
+  position: fixed;
+  z-index: 99999;
 `;
 const NavbarContainerImg = styled.div`
+  @media (max-width: 400px) {
+    margin-left: 10px;
+  }
   @media (max-width: 800px) {
     margin-left: 20px;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 801px) {
     margin-top: 100px;
   }
 `;
 const NavbarImg = styled.img`
+  @media (max-width: 400px) {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
   @media (max-width: 800px) {
     width: 72px;
     height: 70px;
@@ -77,14 +94,14 @@ const NavbarLinks = styled.a`
     font-family: "Inconsolata", monospace;
     border-radius: 30px;
     transition: 1s;
-    height: 30px;
+    height: 40px;
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     align-items: center;
     margin-left: 36%;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 900;
     color: #caf0f8;
 
@@ -97,7 +114,9 @@ const NavbarLinks = styled.a`
     margin-bottom: 15px;
     color: #caf0f8;
     text-decoration: none;
-    height: 30px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: 800;
     width: 120px;
     display: flex;
     align-items: center;
@@ -112,6 +131,12 @@ const NavbarLinks = styled.a`
 `;
 
 const ContainerTitulo = styled.div`
+  @media (max-width: 400px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
   @media (max-width: 800px) {
     display: flex;
     flex-direction: row;
@@ -124,12 +149,24 @@ const ContainerTitulo = styled.div`
   }
 `;
 const TituleUno = styled.h2`
+  @media (max-width: 400px) {
+    font-family: "Inconsolata", monospace;
+    font-weight: 900;
+    font-size: 30px;
+    color: #90e0ef;
+  }
   font-family: "Inconsolata", monospace;
   font-weight: 900;
   font-size: 38px;
   color: #90e0ef;
 `;
 const TituleDos = styled.h2`
+  @media (max-width: 400px) {
+    font-family: "Inconsolata", monospace;
+    font-weight: 900;
+    font-size: 30px;
+    color: #ffba08;
+  }
   font-family: "Inconsolata", monospace;
   font-weight: 900;
   font-size: 38px;
