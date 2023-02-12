@@ -13,7 +13,7 @@ const NavbarContainer = styled.div`
     position: fixed;
     width: 100%;
   }
-  /* @media (max-width: 800px) {
+   @media (max-width: 800px) {
     background-color: #0077b6;
     display: flex;
     flex-direction: row;
@@ -22,7 +22,7 @@ const NavbarContainer = styled.div`
     justify-content: space-between;
     position: fixed;
     width: 100%;
-  } */
+  } 
   background-color: #0077b6;
   display: flex;
   flex-direction: column;
@@ -50,11 +50,11 @@ const NavbarContainerImg = styled.div`
   
 `;
 const NavbarImg = styled.img`
-  /* @media (max-width: 400px) {
+   @media (max-width: 400px) {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-  } */
+  } 
   @media (max-width: 1000px) {
     width: 72px;
     height: 70px;
@@ -131,12 +131,12 @@ const NavbarLinks = styled.a`
 `;
 
 const ContainerTitulo = styled.div`
-  /* @media (max-width: 400px) {
+   @media (max-width: 400px) {
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
-  } */
+  } 
   @media (max-width: 1000px) {
     display: flex;
     flex-direction: row;
@@ -149,24 +149,24 @@ const ContainerTitulo = styled.div`
   
 `;
 const TituleUno = styled.h2`
-  /* @media (max-width: 400px) {
+   @media (max-width: 400px) {
     font-family: "Inconsolata", monospace;
     font-weight: 900;
     font-size: 30px;
     color: #90e0ef;
-  } */
+  } 
   font-family: "Inconsolata", monospace;
   font-weight: 900;
   font-size: 38px;
   color: #90e0ef;
 `;
 const TituleDos = styled.h2`
-  /* @media (max-width: 400px) {
+   @media (max-width: 400px) {
     font-family: "Inconsolata", monospace;
     font-weight: 900;
     font-size: 30px;
     color: #ffba08;
-  } */
+  } 
   font-family: "Inconsolata", monospace;
   font-weight: 900;
   font-size: 38px;

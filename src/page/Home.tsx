@@ -11,7 +11,7 @@ export const HomeComponent:React.FC<{}> = () =>{
     return(
        <>
         <NavbarComponent/>
-        {/* <InicioComponent/> */}
+        <InicioComponent/>
       </>
         
        
