@@ -3,26 +3,8 @@ import styled from "styled-components";
 import LogoPortada from "../assets/LogoPortafolio.jpeg";
 
 const NavbarContainer = styled.div`
-  @media (max-width: 1000px) {
-    background-color: #0077b6;
-    display: flex;
-    flex-direction: row;
-    height: 110px;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-  }
-   @media (max-width: 800px) {
-    background-color: #0077b6;
-    display: flex;
-    flex-direction: row;
-    height: 110px;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-  } 
+  
+   
   background-color: #0077b6;
   display: flex;
   flex-direction: column;
@@ -35,36 +17,57 @@ const NavbarContainer = styled.div`
   font-weight: bold;
   position: fixed;
   z-index: 99999;
+  @media (max-width: 800px) {
+    background-color: #0077b6;
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+  } 
+  @media (max-width: 1000px) {
+    background-color: #0077b6;
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+  }
 `;
 const NavbarContainerImg = styled.div`
   
-  @media (max-width: 1000px) {
+ 
+  
+    margin-top: 100px;
+   @media (max-width: 1000px) {
     margin-left: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 0px;
   }
-  
-    margin-top: 100px;
-  
 `;
 const NavbarImg = styled.img`
-   @media (max-width: 400px) {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-  } 
+   
   @media (max-width: 1000px) {
     width: 72px;
     height: 70px;
     border-radius: 50%;
   }
   @media (min-width: 801px) {
-    width: 280px;
-    height: 280px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
   }
+  @media (max-width: 400px) {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  } 
 `;
 const NavbarContainerLinks = styled.div<{ isOpen: boolean }>`
   @media (max-width: 1000px) {
