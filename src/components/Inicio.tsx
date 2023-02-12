@@ -109,8 +109,9 @@ const ParrafoOne = styled.p`
     flex-direction: column;
     width: 100%;
     margin-top: 10px;
-    width: 80%;
+    
   }
+  
 `;
 const ParrafoTwo = styled.a`
   margin-top: 35px;
