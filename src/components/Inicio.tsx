@@ -90,6 +90,7 @@ const ContainerBienvenido = styled.div`
    }
    @media(max-width:600px){
     padding-left: 20px;
+    width: 75%;
   }
 `;
 const ParrafoOne = styled.p`
@@ -98,7 +99,7 @@ const ParrafoOne = styled.p`
   font-weight: 700;
   color: #90e0ef;
   @media (max-width: 1093px) {
-    width: 500px;
+    width: 85%;
   }
   @media (max-width: 1000px) {
     font-size: 30px;
@@ -161,7 +162,7 @@ const Email = styled.p`
   font-size: 35px;
   font-weight: 700;
   @media (max-width: 1087px) {
-    width: 500px;
+    width: 85%;
     font-size: 30px;
   }
   @media (max-width: 1000px) {

@@ -52,17 +52,15 @@ const NavbarContainerImg = styled.div`
   }
 `;
 const NavbarImg = styled.img`
-   
+   width: 300px;
+    height:300px;
+    border-radius: 50%;
   @media (max-width: 1000px) {
     width: 72px;
     height: 70px;
     border-radius: 50%;
   }
-  @media (min-width: 801px) {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-  }
+  
   @media (max-width: 400px) {
     width: 60px;
     height: 60px;
