@@ -90,7 +90,7 @@ const ContainerBienvenido = styled.div`
    }
    @media(max-width:600px){
     padding-left: 20px;
-    width: 75%;
+    width: 45%;
   }
 `;
 const ParrafoOne = styled.p`
@@ -109,6 +109,7 @@ const ParrafoOne = styled.p`
     flex-direction: column;
     width: 100%;
     margin-top: 10px;
+    width: 80%;
   }
 `;
 const ParrafoTwo = styled.a`
