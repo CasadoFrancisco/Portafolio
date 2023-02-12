@@ -90,7 +90,6 @@ const ContainerBienvenido = styled.div`
    }
    @media(max-width:600px){
     padding-left: 20px;
-    width: 45%;
   }
 `;
 const ParrafoOne = styled.p`
