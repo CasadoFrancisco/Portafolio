@@ -37,23 +37,25 @@ const NavbarContainer = styled.div`
   z-index: 99999;
 `;
 const NavbarContainerImg = styled.div`
-  @media (max-width: 400px) {
-    margin-left: 10px;
-  }
-  @media (max-width: 800px) {
+  
+  @media (max-width: 1000px) {
     margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
   }
-  @media (min-width: 801px) {
+  
     margin-top: 100px;
-  }
+  
 `;
 const NavbarImg = styled.img`
-  @media (max-width: 400px) {
+  /* @media (max-width: 400px) {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-  }
-  @media (max-width: 800px) {
+  } */
+  @media (max-width: 1000px) {
     width: 72px;
     height: 70px;
     border-radius: 50%;
@@ -65,29 +67,28 @@ const NavbarImg = styled.img`
   }
 `;
 const NavbarContainerLinks = styled.div<{ isOpen: boolean }>`
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     position: absolute;
     background-color: #0077b6;
     top: ${(props) => (props.isOpen ? "0vh" : "-100vh")};
     width: 100%;
-    height: 420px;
+    height: 520px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
     transition: 1s;
+    margin-top: 0;
   }
-  @media (min-width: 801px) {
+  
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-top: 40px;
     align-items: center;
-  }
+  
 `;
 
 const NavbarLinks = styled.a`
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     text-decoration: none;
     margin-bottom: 15px;
     color: #caf0f8;
@@ -100,7 +101,6 @@ const NavbarLinks = styled.a`
     justify-content: center;
     align-items: center;
     align-items: center;
-    margin-left: 36%;
     font-size: 30px;
     font-weight: 900;
     color: #caf0f8;
@@ -110,7 +110,7 @@ const NavbarLinks = styled.a`
       color: #0077b6;
     }
   }
-  @media (min-width: 801px) {
+  
     margin-bottom: 15px;
     color: #caf0f8;
     text-decoration: none;
@@ -127,53 +127,53 @@ const NavbarLinks = styled.a`
       background-color: #ffba08;
       color: #0077b6;
     }
-  }
+  
 `;
 
 const ContainerTitulo = styled.div`
-  @media (max-width: 400px) {
+  /* @media (max-width: 400px) {
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
-  }
-  @media (max-width: 800px) {
+  } */
+  @media (max-width: 1000px) {
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
     width: 55%;
   }
-  @media (min-width: 801px) {
+ 
     display: none;
-  }
+  
 `;
 const TituleUno = styled.h2`
-  @media (max-width: 400px) {
+  /* @media (max-width: 400px) {
     font-family: "Inconsolata", monospace;
     font-weight: 900;
     font-size: 30px;
     color: #90e0ef;
-  }
+  } */
   font-family: "Inconsolata", monospace;
   font-weight: 900;
   font-size: 38px;
   color: #90e0ef;
 `;
 const TituleDos = styled.h2`
-  @media (max-width: 400px) {
+  /* @media (max-width: 400px) {
     font-family: "Inconsolata", monospace;
     font-weight: 900;
     font-size: 30px;
     color: #ffba08;
-  }
+  } */
   font-family: "Inconsolata", monospace;
   font-weight: 900;
   font-size: 38px;
   color: #ffba08;
 `;
 const Label = styled.label`
-  @media (min-width: 801px) {
+  @media (min-width: 1000px) {
     display: none;
   }
   & {
