@@ -11,100 +11,115 @@ const ContainerInicio = styled.div`
     background-color: #023e8a;
     height: 90vh;
     font-family: "Inconsolata", monospace;
-
   }
-   font-family: "Inconsolata", monospace;
+  font-family: "Inconsolata", monospace;
   background-color: #023e8a;
   height: 100vh;
-  
-  margin-left: 500px; 
+  margin-left: 500px;
+
 `;
 const ContainerName = styled.div`
-@media(max-width:800px){
-    
+  @media (max-width: 800px) {
     width: 100%;
     padding-left: 14%;
     padding-top: 80px;
-}
+  }
   display: flex;
   align-content: center;
   justify-content: flex-start;
-  padding-top: 350px; 
+  padding-top: 17%;
+  width: 100%;
+  flex-wrap: wrap;
+ 
 `;
 const NameOne = styled.h1`
-@media(max-width:800px){
+  @media (max-width: 800px) {
     font-size: 80px;
     color: #90e0ef;
-}
+  }
   margin-left: 40px;
   font-size: 130px;
-  color: #90e0ef; 
+  color: #90e0ef;
+  width: 570px;
+  margin-right: 10px;
+
 `;
 const NameTwo = styled.h1`
-@media(max-width:800px){
+  @media (max-width: 800px) {
     font-size: 80px;
     color: #ffba08;
-}
+  }
   margin-left: 40px;
   font-size: 130px;
-  color: #ffba08; 
+  color: #ffba08;
+  width:420px;
 `;
 const ContainerBienvenido = styled.div`
-@media(max-width:800px){
+  @media (max-width: 800px) {
     flex-direction: column;
     display: flex;
-    margin-top:70px;
+    margin-top: 70px;
     width: 300px;
     align-items: center;
     justify-content: flex-start;
-    
+
     height: 200px;
     margin-left: 14%;
-}
+  }
+  @media(max-width:1613px){
+    display: flex;
+    flex-direction: column;
+  }
   flex-direction: row;
   display: flex;
-  margin-left: 45px; 
+  margin-left: 45px;
+ 
 `;
 const ParrafoOne = styled.p`
-@media(max-width:800px){
-font-size: 30px;
-font-weight: 700;
-color: white;
-display: flex;
-
-}
+  @media (max-width: 800px) {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+  }
   font-size: 30px;
   margin-top: 50px;
   font-weight: 700;
-  color: #90e0ef; 
+  color: #90e0ef;
 `;
-const ParrafoTwo = styled.p`
-@media(max-width:800px){
+const ParrafoTwo = styled.a`
+  @media (max-width: 800px) {
     font-size: 50px;
     padding-right: 80px;
     font-weight: 800;
-    color: #02C39A;
-}
+    color: #02c39a;
+  }
+  @media(max-width:1613px){
+    margin-top: 30px;
+   padding-left: 1px;
+  }
   font-size: 50px;
   margin-top: 35px;
   font-weight: 900;
   padding-left: 15px;
-  color: #02c39a; 
+  color: #02c39a;
+  font-family: "Inconsolata", monospace;
+  width: 330px;
 `;
 
 const ContainerIfYouLike = styled.div`
   flex-direction: row;
   display: flex;
   margin-left: 45px;
-  width: 40vw; 
+  width: 40vw;
 `;
 const Email = styled.p`
-  color: #0096c7; 
+  color: #0096c7;
 `;
 const ContainerIconInicio = styled.div`
   display: flex;
   flex-direction: row;
-  margin-left: 45px; 
+  margin-left: 45px;
 `;
 
 const ContainerIcon = styled.div`
@@ -121,7 +136,7 @@ const ContainerIcon = styled.div`
   .icono {
     font-size: 50px;
     color: white;
-  } 
+  }
 `;
 const Button = styled.button`
   margin-top: 50px;
@@ -215,7 +230,7 @@ const Button = styled.button`
   &:active {
     z-index: 9999;
     animation: bounce 0.1s linear;
-  } 
+  }
 `;
 
 export const InicioComponent: React.FC = () => {
@@ -230,7 +245,7 @@ export const InicioComponent: React.FC = () => {
       </ContainerName>
       <ContainerBienvenido>
         <ParrafoOne>Bienvenido/a a mi Portafolio como desarrollador</ParrafoOne>
-        <ParrafoTwo>Frontend.</ParrafoTwo>
+        <ParrafoTwo ><img src="https://readme-typing-svg.demolab.com?&weight=900&size=50&pause=1000&color=02C39A&vCenter=true&width=435&lines=Frontend...." alt="Typing SVG" /></ParrafoTwo>
       </ContainerBienvenido>
       <ContainerIfYouLike>
         <ParrafoOne>
