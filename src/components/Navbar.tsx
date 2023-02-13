@@ -13,10 +13,9 @@ const NavbarContainer = styled.div`
   height: 100%;
   width: 500px;
   font-family: "Inconsolata", monospace;
-  font-size: 23px;
-  font-weight: bold;
+  
   position: fixed;
-  z-index: 99999;
+  
   @media (max-width: 800px) {
     background-color: #0077b6;
     display: flex;
@@ -36,6 +35,7 @@ const NavbarContainer = styled.div`
     justify-content: space-between;
     position: fixed;
     width: 100%;
+    z-index: 10;
   }
 `;
 const NavbarContainerImg = styled.div`
@@ -96,8 +96,8 @@ const NavbarLinks = styled.a`
     font-family: "Inconsolata", monospace;
     border-radius: 30px;
     transition: 1s;
-    height: 40px;
-    width: 30%;
+    height: 45px;
+    width: 33%;
     display: flex;
     justify-content: center;
     align-items: center;

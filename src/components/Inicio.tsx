@@ -6,74 +6,111 @@ const ContainerInicio = styled.div`
   background-color: #023e8a;
   height: 100vh;
   margin-left: 500px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   @media (max-width: 1000px) {
     display: flex;
     flex-direction: column;
-    padding-top: 110px;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     background-color: #023e8a;
-    height: 100%;
+    width: 100%;
     font-family: "Inconsolata", monospace;
     margin-left: 0;
+    padding-left: 0;
   }
-  @media(max-width:600px){
-
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 110px;
+    align-items: center;
+    justify-content: center;
+    background-color: #023e8a;
+    width: 100%;
+    font-family: "Inconsolata", monospace;
   }
 `;
 const ContainerName = styled.div`
   display: flex;
-  align-content: center;
+  align-content: flex-start;
   justify-content: flex-start;
-  padding-top: 17%;
   flex-wrap: wrap;
+  width: 80%;
+  @media (max-width: 800px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   @media (max-width: 1000px) {
-    padding-left: 10%;
     padding-top: 40px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 100%;
   }
-  @media(max-width:600px){
-    
+
+  @media (max-width: 1280px) {
+    margin-top: 1px;
+  }
+  @media (max-widt: 1590px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 `;
 const NameOne = styled.h1`
-  margin-left: 40px;
   font-size: 130px;
   color: #90e0ef;
-  width: 570px;
-  margin-right: 10px;
+  width: 55%;
+  margin-right: 40px;
+
   @media (max-width: 1180px) {
-    font-size: 100px;
+    font-size: 90px;
+    width: 80%;
   }
   @media (max-width: 1000px) {
     color: #90e0ef;
-    margin-left: 0;
     font-size: 60px;
-    width: 250px;
+    width: 100%;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
 const NameTwo = styled.h1`
-  margin-left: 40px;
   font-size: 130px;
   color: #ffba08;
-  width: 420px;
+  width: 400px;
+
   @media (max-width: 1138px) {
-    font-size: 100px;
+    font-size: 90px;
+    height: 50%;
+    width: 100%;
   }
   @media (max-width: 1000px) {
     color: #ffba08;
-    margin-left: 0;
     font-size: 60px;
-    width: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
 const ContainerBienvenido = styled.div`
   flex-direction: row;
   display: flex;
-  margin-left: 45px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+
   @media (max-width: 1613px) {
     display: flex;
     flex-direction: column;
@@ -81,15 +118,9 @@ const ContainerBienvenido = styled.div`
   @media (max-width: 1000px) {
     flex-direction: column;
     display: flex;
-    margin-top: 10px;
-    
     align-items: center;
     justify-content: center;
-    height: 200px;
-    padding-left: 100px;
-   }
-   @media(max-width:600px){
-    padding-left: 20px;
+    width: 90%;
   }
 `;
 const ParrafoOne = styled.p`
@@ -97,6 +128,9 @@ const ParrafoOne = styled.p`
   margin-top: 50px;
   font-weight: 700;
   color: #90e0ef;
+  display: flex;
+  align-items: center;
+  justify-content: ce;
   @media (max-width: 1093px) {
     width: 85%;
   }
@@ -105,42 +139,46 @@ const ParrafoOne = styled.p`
     font-weight: 700;
     color: white;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     width: 100%;
     margin-top: 10px;
-    
   }
-  
 `;
-const ParrafoTwo = styled.a`
-  margin-top: 35px;
-  padding-left: 15px;
+const ParrafoTwo = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 41px;
+  margin-left: 20px;
+  height: 80%;
+
   width: 330px;
   @media (max-width: 1613px) {
     margin-top: 30px;
-    padding-left: 0;
   }
   @media (max-width: 1000px) {
-    margin-right: 50px;
     font-weight: 500;
-    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
   }
 `;
+const Img = styled.img``;
 
 const ContainerIfYouLike = styled.div`
   flex-direction: column;
   display: flex;
-  padding-left: 45px;
+
   width: 40vw;
   @media (max-width: 1000px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    padding-left: 0px;
-   
+    align-items: flex-start;
+    width: 80%;
   }
 `;
 const ParrafoEmail = styled.p`
@@ -152,44 +190,49 @@ const ParrafoEmail = styled.p`
     font-size: 30px;
     font-weight: 700;
     color: white;
-    width: 300px;
-   
-   
-    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
 const Email = styled.p`
   color: #0096c7;
   font-size: 35px;
   font-weight: 700;
-  @media (max-width: 1087px) {
+  @media (max-width: 1090px) {
     width: 85%;
     font-size: 30px;
+  }
+  @media (max-width: 1135px) {
+    font-size: 27px;
   }
   @media (max-width: 1000px) {
     color: #0096c7;
     font-size: 21px;
     font-weight: 900;
-    margin-top: 10px;  
-    width: 330px;
-    }
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 const ContainerIconInicio = styled.div`
   display: flex;
   flex-direction: row;
-  margin-left: 45px;
+
   @media (max-width: 1000px) {
-    
     flex-direction: row;
-    
+
     margin-bottom: 20px;
     height: 60px;
     width: 90%;
-     display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
-  @media(max-width:600px){
+  @media (max-width: 600px) {
     width: 80%;
   }
 `;
@@ -209,21 +252,20 @@ const ContainerIcon = styled.div`
     font-size: 40px;
     color: white;
   }
-  @media(max-width:1000px){
+  @media (max-width: 1000px) {
     display: flex;
     justify-content: center;
     align-items: center;
-    
   }
 `;
 const Button = styled.button`
   @media (max-width: 1000px) {
-    margin-right: 100px;
+    margin-top: 20px;
     font-size: 17px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    position: relative;
   }
-  margin-top: 50px;
-  margin-left: 50px;
+
   display: block;
   padding: 0.7em 1em;
   background: transparent;
@@ -268,7 +310,7 @@ const Button = styled.button`
     position: absolute;
     background: #d4af37;
     top: -5px;
-    z-index: 0;
+
     bottom: 5px;
     width: 10px;
     left: 100%;
@@ -318,14 +360,18 @@ const Button = styled.button`
   }
 `;
 const ContainerButton = styled.div`
-@media(max-width:1000px){
-  width: 90%;
+  height: 150px;
+  width: 40%;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  margin-left: 6%;
-}
 
+  @media (max-width: 1000px) {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const InicioComponent: React.FC = () => {
@@ -333,7 +379,7 @@ export const InicioComponent: React.FC = () => {
     window.open("https://resume.io/r/nuUzdquTb", "_blank");
   }, []);
   return (
-    <ContainerInicio>
+    <ContainerInicio id="inicio">
       <ContainerName>
         <NameOne>Francisco </NameOne>
         <NameTwo>Casado</NameTwo>
@@ -341,7 +387,7 @@ export const InicioComponent: React.FC = () => {
       <ContainerBienvenido>
         <ParrafoOne>Bienvenido/a a mi Portafolio como desarrollador</ParrafoOne>
         <ParrafoTwo>
-          <img
+          <Img
             src="https://readme-typing-svg.demolab.com?font=Inconsolata&size=50&weight=600&width=270&pause=1000&color=02C39A&vCenter=true&lines=Frontend.."
             alt="Typing SVG"
           />
@@ -378,24 +424,22 @@ export const InicioComponent: React.FC = () => {
       </ContainerIconInicio>
       <ContainerButton>
         <Button
-        type="button"
-        className="btn cube cube-hover"
-        onClick={handleClick}
-      >
-        <div className="bg-top">
-          <div className="bg-inner"></div>
-        </div>
-        <div className="bg-right">
-          <div className="bg-inner"></div>
-        </div>
-        <div className="bg">
-          <div className="bg-inner"></div>
-        </div>
-        <div className="text">Click para ver cv</div>
-      </Button>
+          type="button"
+          className="btn cube cube-hover"
+          onClick={handleClick}
+        >
+          <div className="bg-top">
+            <div className="bg-inner"></div>
+          </div>
+          <div className="bg-right">
+            <div className="bg-inner"></div>
+          </div>
+          <div className="bg">
+            <div className="bg-inner"></div>
+          </div>
+          <div className="text">Click para ver cv</div>
+        </Button>
       </ContainerButton>
-
-      
     </ContainerInicio>
   );
 };
