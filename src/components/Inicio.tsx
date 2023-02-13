@@ -120,7 +120,7 @@ const ContainerBienvenido = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 100%;
   }
 `;
 const ParrafoOne = styled.p`
@@ -132,7 +132,7 @@ const ParrafoOne = styled.p`
   align-items: center;
   justify-content: ce;
   @media (max-width: 1093px) {
-    width: 85%;
+    width: 100%;
   }
   @media (max-width: 1000px) {
     font-size: 30px;
@@ -142,8 +142,9 @@ const ParrafoOne = styled.p`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width: 70%;
     margin-top: 10px;
+    
   }
 `;
 const ParrafoTwo = styled.div`
