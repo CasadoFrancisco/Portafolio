@@ -28,7 +28,7 @@ const ContainerInicio = styled.div`
   @media (max-width: 700px) {
     display: flex;
     flex-direction: column;
-    padding-top: 110px;
+    padding-top: 140px;
     align-items: center;
     justify-content: center;
     background-color: #023e8a;
