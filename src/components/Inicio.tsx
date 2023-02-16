@@ -120,7 +120,8 @@ const ContainerBienvenido = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    
+    
   }
 `;
 const ParrafoOne = styled.p`
@@ -153,7 +154,8 @@ const ParrafoTwo = styled.div`
   justify-content: flex-start;
   margin-top: 41px;
   margin-left: 20px;
-  height: 80%;
+  height: 100%;
+  
 
   width: 330px;
   @media (max-width: 1613px) {
@@ -165,6 +167,8 @@ const ParrafoTwo = styled.div`
     align-items: center;
     justify-content: center;
     margin-left: 0;
+  
+    height:100%;
   }
 `;
 const Img = styled.img``;
@@ -240,9 +244,9 @@ const ContainerIconInicio = styled.div`
 
 const ContainerIcon = styled.div`
   background-color: #03045e;
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
+  border-radius: 90%;
+  height: 50px;
+  width: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -250,7 +254,7 @@ const ContainerIcon = styled.div`
   margin-top: 30px;
 
   .icono {
-    font-size: 40px;
+    font-size: 30px;
     color: white;
   }
   @media (max-width: 1000px) {
