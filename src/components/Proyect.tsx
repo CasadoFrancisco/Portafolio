@@ -199,7 +199,7 @@ const ImgPortafolio = styled.img`
   }
   @media(max-width:700px){
    height: 150px;
-   width: 290px;
+   width: 310px;
   }
 `;
 const ContainerInfoPortafolio = styled.div`
