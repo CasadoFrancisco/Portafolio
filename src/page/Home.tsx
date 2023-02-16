@@ -13,8 +13,8 @@ export const HomeComponent:React.FC<{}> = () =>{
     return(
        <Container>
         <NavbarComponent/>
-        {/* <InicioComponent/>
-        <AboutMeComponent/> */}
+        <InicioComponent/>
+        <AboutMeComponent/>
         <ProyectComponent/>
        </Container>
         
