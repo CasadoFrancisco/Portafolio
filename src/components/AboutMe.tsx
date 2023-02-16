@@ -41,7 +41,7 @@ const ContainerAbout = styled.div`
   justify-content: center;
   height: 100%;
   font-family: "Inconsolata", monospace;
-  margin-left: 500px;
+  margin-left: 450px;
   padding-left: 50px;
   padding-right: 90px;
   padding-top: 20px;

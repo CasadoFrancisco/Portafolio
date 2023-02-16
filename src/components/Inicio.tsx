@@ -5,7 +5,7 @@ const ContainerInicio = styled.div`
   font-family: "Inconsolata", monospace;
   background-color: #023e8a;
   height: 100vh;
-  margin-left: 500px;
+  margin-left: 450px;
   display: flex;
   align-items: flex-start;
   justify-content: center;

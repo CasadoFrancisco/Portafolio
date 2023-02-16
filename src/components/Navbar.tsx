@@ -11,7 +11,7 @@ const NavbarContainer = styled.div`
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 500px;
+  width: 450px;
   font-family: "Inconsolata", monospace;
   
   position: fixed;
