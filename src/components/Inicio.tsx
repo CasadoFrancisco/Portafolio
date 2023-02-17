@@ -20,10 +20,11 @@ const ContainerInicio = styled.div`
     align-items: center;
     justify-content: center;
     background-color: #023e8a;
-    width: 100%;
+    
     font-family: "Inconsolata", monospace;
     margin-left: 0;
-    padding-left: 0;
+    padding-left: 10px;
+   
   }
   @media (max-width: 700px) {
     display: flex;
@@ -32,8 +33,8 @@ const ContainerInicio = styled.div`
     align-items: center;
     justify-content: center;
     background-color: #023e8a;
-    width: 100%;
     font-family: "Inconsolata", monospace;
+    padding-left: 20px;
   }
 `;
 const ContainerName = styled.div`
@@ -122,6 +123,7 @@ const ContainerBienvenido = styled.div`
     justify-content: center;
     
     
+    
   }
 `;
 const ParrafoOne = styled.p`
@@ -143,7 +145,6 @@ const ParrafoOne = styled.p`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 70%;
     margin-top: 10px;
     
   }
