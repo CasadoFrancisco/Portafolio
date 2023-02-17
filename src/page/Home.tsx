@@ -5,6 +5,7 @@ import { EducationComponent } from "../components/Educacion";
 import { InicioComponent } from "../components/Inicio";
 import { NavbarComponent } from "../components/Navbar";
 import { ProyectComponent } from "../components/Proyect";
+import { SkillsComponent } from "../components/Skills";
 
 
 
@@ -18,6 +19,7 @@ export const HomeComponent:React.FC<{}> = () =>{
         <AboutMeComponent/>
         <ProyectComponent/>
         <EducationComponent/>
+        <SkillsComponent/>
        </Container>
         
       
