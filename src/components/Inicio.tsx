@@ -199,6 +199,8 @@ const ParrafoEmail = styled.p`
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 0;
+    padding-top: 50px;
   }
 `;
 const Email = styled.p`
