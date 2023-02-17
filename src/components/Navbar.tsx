@@ -78,6 +78,7 @@ const NavbarContainerLinks = styled.div<{ isOpen: boolean }>`
     flex-direction: column;
     transition: 1s;
     margin-top: 0;
+    
   }
   
     display: flex;

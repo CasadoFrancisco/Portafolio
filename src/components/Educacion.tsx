@@ -232,7 +232,7 @@ margin-top: 20px;
     font-size: 1.25em;
     font-weight: 700;
     letter-spacing: 0.3em;
-    z-index: 20;
+    z-index: 2;
     transition: all 0.3s ease-in-out;
   }
 
