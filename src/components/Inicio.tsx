@@ -153,9 +153,10 @@ const ParrafoTwo = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-top: 41px;
+  padding-top: 40px;
   margin-left: 20px;
   height: 100%;
+  
   
 
   width: 330px;

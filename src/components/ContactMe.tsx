@@ -6,6 +6,8 @@ import react from "../assets/iconColor/react.png";
 import ts from "../assets/iconColor/ts.png";
 import sc from "../assets/iconColor/styled.png";
 import figma from "../assets/iconColor/figma.png";
+import Swal from "sweetalert2";
+
 
 export const ContactMe: React.FC<{}> = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -18,17 +20,23 @@ export const ContactMe: React.FC<{}> = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    // `Enviando formulario con los siguentes datos:
+      
+    // Nombre: ${name}
+    // Email: ${email}
+    // Mensaje: ${message}`
+
+    
 
     if (formCompleted) {
-      alert(`Enviando formulario con los siguentes datos: 
-                Nombre: ${name},
-                Subject: ${subject},
-                Email: ${email}
-                Mensaje: ${message}`);
+      Swal.fire({
+        icon: 'success',
+        title: `Nombre: ${name}!`,
+        html: `Email: ${email}<br/>Mensaje: ${message}`,
+        confirmButtonText: 'Enviar email'
+      });
     } else {
-      alert(
-        "Porfavor, completar todos los campos antes de enviar el formulario"
-      );
+      Swal.fire("Por favor, completar todos los campos antes de enviar el formulario");
     }
 
     emailjs
@@ -56,12 +64,18 @@ export const ContactMe: React.FC<{}> = () => {
       setformCompleted(false);
     }
   }
-  const handleClick = useCallback(()=>{
-    window.open("https://www.figma.com/file/Zc6A2gz6kw9Ryrl9mqGwVn/portafolio?node-id=1%3A4&t=32gYUV36g3uiCwrL-1","_blank")
-  },[])
+  const handleClick = useCallback(() => {
+    window.open(
+      "https://www.figma.com/file/Zc6A2gz6kw9Ryrl9mqGwVn/portafolio?node-id=1%3A4&t=32gYUV36g3uiCwrL-1",
+      "_blank"
+    );
+  }, []);
+
+   
   return (
     <Container className="container" id="contacto">
       <Title className="title">Contacto</Title>
+     
       <SubTitle>
         Si te gustó mi trabajo y estás interesado en contratarme, por favor
         completa el siguiente formulario de contacto
@@ -139,13 +153,21 @@ export const ContactMe: React.FC<{}> = () => {
           <Hr />
           <ContainerFigma>
             <TextoFigma>Para visualizar el proyecto en figma </TextoFigma>
-            <BotonFigma onClick={()=>handleClick()}><span>Click here</span></BotonFigma>
+            <BotonFigma onClick={() => handleClick()}>
+              <span>Click here</span>
+            </BotonFigma>
           </ContainerFigma>
         </ContainerData>
       </ContainerInfo>
+    
     </Container>
+
   );
 };
+const MyAlert = styled.div`
+  background-color: #7FFF00;
+  border: 1px solid #FF0000;
+`;
 
 const Container = styled.div`
   margin-left: 450px;
@@ -342,21 +364,20 @@ const Hr1 = styled.hr`
   color: #90e0ef;
 `;
 const LabelSend = styled.label`
-font-size: 20px;
-color: #FFBA08;
-font-weight: 600;
+  font-size: 20px;
+  color: #ffba08;
+  font-weight: 600;
 `;
 const ContainerFigma = styled.div`
-padding-top: 20px;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `;
 const TextoFigma = styled.p`
-color: white;
-font-size: 20px;
-
+  color: white;
+  font-size: 20px;
 `;
 const BotonFigma = styled.button`
   & {
@@ -372,7 +393,6 @@ const BotonFigma = styled.button`
     border: none;
     margin-top: 30px;
   }
-
 
   &:after {
     content: " ";
