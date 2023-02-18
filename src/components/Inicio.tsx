@@ -248,7 +248,7 @@ const ContainerIconInicio = styled.div`
 const ContainerIcon = styled.div`
   background-color: #03045e;
   border-radius: 90%;
-  height: 50px;
+  height: 68px;
   width: 70px;
   display: flex;
   align-items: center;

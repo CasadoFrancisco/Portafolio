@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { AboutMeComponent } from "../components/AboutMe";
+import { ContactMe } from "../components/ContactMe";
 import { EducationComponent } from "../components/Educacion";
 import { InicioComponent } from "../components/Inicio";
 import { NavbarComponent } from "../components/Navbar";
@@ -20,6 +21,7 @@ export const HomeComponent:React.FC<{}> = () =>{
         <ProyectComponent/>
         <EducationComponent/>
         <SkillsComponent/>
+        <ContactMe/>
        </Container>
         
       
