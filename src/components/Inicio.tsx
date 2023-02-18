@@ -397,7 +397,7 @@ export const InicioComponent: React.FC = () => {
         <ParrafoOne>Bienvenido/a a mi Portafolio como desarrollador</ParrafoOne>
         <ParrafoTwo>
           <Img
-            src="https://readme-typing-svg.demolab.com?font=Inconsolata&size=50&weight=600&width=270&pause=1000&color=02C39A&vCenter=true&lines=Frontend.."
+            src="https://readme-typing-svg.demolab.com?font=Inconsolata&size=50&weight=750&width=270&pause=1000&color=02C39A&vCenter=true&lines=Frontend.."
             alt="Typing SVG"
           />
         </ParrafoTwo>
