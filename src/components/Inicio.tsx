@@ -157,6 +157,7 @@ const ParrafoTwo = styled.div`
   margin-left: 20px;
   height: 100%;
   width: 330px;
+  
   @media (max-width: 1613px) {
     margin-top: 30px;
     padding-top: 0;
@@ -397,7 +398,7 @@ export const InicioComponent: React.FC = () => {
         <ParrafoOne>Bienvenido/a a mi Portafolio como desarrollador</ParrafoOne>
         <ParrafoTwo>
           <Img
-              src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=50&pause=1000&width=330&height=80&lines=Frontend" alt="Typing SVG"
+              src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=50&color=02C39A&pause=1000&width=330&height=80&lines=Frontend" alt="Typing SVG"
             
           />
         </ParrafoTwo>
