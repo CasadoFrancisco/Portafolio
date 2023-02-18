@@ -156,12 +156,10 @@ const ParrafoTwo = styled.div`
   padding-top: 40px;
   margin-left: 20px;
   height: 100%;
-  
-  
-
   width: 330px;
   @media (max-width: 1613px) {
     margin-top: 30px;
+    padding-top: 0;
   }
   @media (max-width: 1000px) {
     font-weight: 500;
@@ -173,7 +171,9 @@ const ParrafoTwo = styled.div`
     height:100%;
   }
 `;
-const Img = styled.img``;
+const Img = styled.img`
+
+`;
 
 const ContainerIfYouLike = styled.div`
   flex-direction: column;
@@ -397,8 +397,8 @@ export const InicioComponent: React.FC = () => {
         <ParrafoOne>Bienvenido/a a mi Portafolio como desarrollador</ParrafoOne>
         <ParrafoTwo>
           <Img
-            src="https://readme-typing-svg.demolab.com?font=Inconsolata&size=50&weight=750&width=270&pause=1000&color=02C39A&vCenter=true&lines=Frontend.."
-            alt="Typing SVG"
+              src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=50&pause=1000&width=330&height=80&lines=Frontend" alt="Typing SVG"
+            
           />
         </ParrafoTwo>
       </ContainerBienvenido>
