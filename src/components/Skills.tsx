@@ -72,7 +72,7 @@ export const SkillsComponent: React.FC<{}> = () => {
 
 const Container = styled.div`
   margin-left: 450px;
-  padding-left: 50px;
+  padding-left: 40px;
   padding-top: 60px;
   min-height: 100vh;
   background-color: #023e8a;

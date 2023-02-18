@@ -98,7 +98,7 @@ const NavbarLinks = styled.a`
     border-radius: 30px;
     transition: 1s;
     height: 45px;
-    width: 33%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,12 +119,13 @@ const NavbarLinks = styled.a`
     height: 40px;
     font-size: 25px;
     font-weight: 800;
-    width: 120px;
+    width: 110%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 30px;
     transition: 1s;
+    
     &:hover {
       background-color: #ffba08;
       color: #0077b6;
