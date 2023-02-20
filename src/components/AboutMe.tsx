@@ -113,8 +113,11 @@ const ParrafoDos = styled.p`
   }
 `;
 const ContainerParrafoDos = styled.div`
+align-items: center;
+justify-content: center;
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
 `;
 const ParrafoTres = styled.p`
   font-size: 30px;
