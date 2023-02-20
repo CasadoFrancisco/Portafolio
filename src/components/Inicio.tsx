@@ -1,5 +1,6 @@
 import React, { useCallback } from "react";
 import styled from "styled-components";
+import {delay, easeIn, motion, spring} from "framer-motion"
 
 const ContainerInicio = styled.div`
   font-family: "Inconsolata", monospace;

@@ -7,6 +7,7 @@ import ts from "../assets/iconColor/ts.png";
 import sc from "../assets/iconColor/styled.png";
 import figma from "../assets/iconColor/figma.png";
 import Swal from "sweetalert2";
+import { motion } from "framer-motion";
 
 
 export const ContactMe: React.FC<{}> = () => {
@@ -145,10 +146,14 @@ export const ContactMe: React.FC<{}> = () => {
 
           <TextProject>Este portafolio esta desarrrollado con:</TextProject>
           <ContainerIcon>
-            <Icon src={react} />
-            <Icon src={ts} />
-            <IconSC src={sc} />
-            <Icon src={figma} />
+            <Icon src={react}   whileHover = {{scale : [null, 1.2, 1.2]}}
+            transition = {{duration:1}}/>
+            <Icon src={ts}  whileHover = {{scale : [null, 1.2, 1.2]}}
+            transition = {{duration:1}}/>
+            <IconSC src={sc}  whileHover = {{scale : [null, 1.2, 1.2]}}
+            transition = {{duration:1}}/>
+            <Icon src={figma}  whileHover = {{scale : [null, 1.2, 1.2]}}
+            transition = {{duration:1}}/>
           </ContainerIcon>
           <Hr />
           <ContainerFigma>
@@ -326,7 +331,7 @@ const TextProject = styled.p`
   }
 `;
 
-const Icon = styled.img`
+const Icon = styled(motion.img)`
   height: 70px;
   width: 70px;
   padding-right: 30px;
@@ -336,7 +341,7 @@ const Icon = styled.img`
     width: 40px;
   }
 `;
-const IconSC = styled.img`
+const IconSC = styled(motion.img)`
   padding-top: 10px;
   height: 70px;
   width: 70px;
