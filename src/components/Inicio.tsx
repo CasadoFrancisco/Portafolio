@@ -20,11 +20,10 @@ const ContainerInicio = styled.div`
     align-items: center;
     justify-content: center;
     background-color: #023e8a;
-    
+
     font-family: "Inconsolata", monospace;
     margin-left: 0;
     padding-left: 10px;
-   
   }
   @media (max-width: 700px) {
     display: flex;
@@ -104,7 +103,7 @@ const NameTwo = styled.h1`
     align-items: center;
     justify-content: center;
   }
-`;
+`;					
 const ContainerBienvenido = styled.div`
   flex-direction: row;
   display: flex;
@@ -121,9 +120,6 @@ const ContainerBienvenido = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
-    
   }
 `;
 const ParrafoOne = styled.p`
@@ -144,9 +140,9 @@ const ParrafoOne = styled.p`
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     margin-top: 10px;
-    
+	 width: 80%;
+	 
   }
 `;
 const ParrafoTwo = styled.div`
@@ -157,7 +153,7 @@ const ParrafoTwo = styled.div`
   margin-left: 20px;
   height: 100%;
   width: 330px;
-  
+
   @media (max-width: 1613px) {
     margin-top: 30px;
     padding-top: 0;
@@ -168,13 +164,11 @@ const ParrafoTwo = styled.div`
     align-items: center;
     justify-content: center;
     margin-left: 0;
-  
-    height:100%;
+
+    height: 100%;
   }
 `;
-const Img = styled.img`
-
-`;
+const Img = styled.img``;
 
 const ContainerIfYouLike = styled.div`
   flex-direction: column;
@@ -398,8 +392,8 @@ export const InicioComponent: React.FC = () => {
         <ParrafoOne>Bienvenido/a a mi Portafolio como desarrollador</ParrafoOne>
         <ParrafoTwo>
           <Img
-              src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=50&color=02C39A&pause=1000&width=330&height=80&lines=Frontend" alt="Typing SVG"
-            
+            src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=50&color=02C39A&pause=1000&width=330&height=80&lines=Frontend"
+            alt="Typing SVG"
           />
         </ParrafoTwo>
       </ContainerBienvenido>
