@@ -83,7 +83,7 @@ const Container = styled.div`
   flex-direction: column;
   @media(max-width:1000px){
     margin-left: 0;
-    padding-top: 130px;
+    padding-top: 80px;
     align-items: center;
     justify-content: center;
   }
@@ -92,7 +92,7 @@ const Container = styled.div`
     padding-right: 5px;
     align-items: center;
     justify-content: center;
-    padding-top: 60px;
+    padding-top: 110px;
     
   }
 `;
@@ -114,11 +114,13 @@ const ContainerInfo = styled.div`
   @media(max-width:1000px){
     align-items: center;
     justify-content: center;
+    
   }
   @media(max-width:700px){
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding-top: 30px;
   }
 `;
 const Containerskills = styled.div`

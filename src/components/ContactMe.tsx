@@ -77,8 +77,8 @@ export const ContactMe: React.FC<{}> = () => {
       <Title className="title">Contacto</Title>
      
       <SubTitle>
-        Si te gustó mi trabajo y estás interesado en contratarme, por favor
-        completa el siguiente formulario de contacto
+        Si te gustó mi trabajo y estás interesado en contactarme, por favor
+        completa el siguiente formulario de contacto.
       </SubTitle>
       <ContainerInfo>
         <Form ref={formRef} onSubmit={handleSubmit} className="containerForm">
@@ -164,10 +164,7 @@ export const ContactMe: React.FC<{}> = () => {
 
   );
 };
-const MyAlert = styled.div`
-  background-color: #7FFF00;
-  border: 1px solid #FF0000;
-`;
+
 
 const Container = styled.div`
   margin-left: 450px;
@@ -182,8 +179,9 @@ const Container = styled.div`
   flex-direction: column;
   padding-right: 20px;
   @media (max-width: 1000px) {
+    
     margin-left: 0;
-    padding-top: 100px;
+    padding-top: 140px;
     align-items: center;
     justify-content: center;
     padding-left: 10px;

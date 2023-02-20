@@ -91,6 +91,8 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     padding-right: 20px;
+    padding-left: 0;
+    padding-right: 0;
   }
 `;
 const TitleEducation = styled.h1`
@@ -131,7 +133,7 @@ const ContainerEducation = styled.div`
   }
   @media(max-width:700px){
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 }
 `;
@@ -171,8 +173,9 @@ const ContainerCertificateInd = styled.div`
   justify-content: flex-start;
   margin-bottom: 35px;
   @media(max-width:700px){
-    
-    height: 100px;
+   
+  width: 100%;
+  justify-content: center;
     
 }
 `;

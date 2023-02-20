@@ -20,7 +20,6 @@ const ContainerInicio = styled.div`
     align-items: center;
     justify-content: center;
     background-color: #023e8a;
-
     font-family: "Inconsolata", monospace;
     margin-left: 0;
     padding-left: 10px;
@@ -28,12 +27,12 @@ const ContainerInicio = styled.div`
   @media (max-width: 700px) {
     display: flex;
     flex-direction: column;
-    padding-top: 140px;
+    padding-top: 150px;
     align-items: center;
     justify-content: center;
     background-color: #023e8a;
     font-family: "Inconsolata", monospace;
-    padding-left: 20px;
+    padding-left: 0;
   }
 `;
 const ContainerName = styled.div`
@@ -42,28 +41,31 @@ const ContainerName = styled.div`
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 80%;
+  @media (max-widt: 1590px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  @media (max-width: 1280px) {
+    margin-top: 1px;
+  }
+  @media (max-width: 1000px) {
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
   @media (max-width: 800px) {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  @media (max-width: 1000px) {
-    padding-top: 40px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
+  
 
-  @media (max-width: 1280px) {
-    margin-top: 1px;
-  }
-  @media (max-widt: 1590px) {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
+  
+  
 `;
 const NameOne = styled.h1`
   font-size: 130px;
@@ -78,7 +80,6 @@ const NameOne = styled.h1`
   @media (max-width: 1000px) {
     color: #90e0ef;
     font-size: 60px;
-    width: 100%;
     margin-right: 0;
     display: flex;
     align-items: center;
@@ -110,6 +111,7 @@ const ContainerBienvenido = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
+   
 
   @media (max-width: 1613px) {
     display: flex;
@@ -120,6 +122,8 @@ const ContainerBienvenido = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 80%;
+   
   }
 `;
 const ParrafoOne = styled.p`
@@ -129,7 +133,7 @@ const ParrafoOne = styled.p`
   color: #90e0ef;
   display: flex;
   align-items: center;
-  justify-content: ce;
+  justify-content: center;
   @media (max-width: 1093px) {
     width: 100%;
   }
@@ -141,7 +145,7 @@ const ParrafoOne = styled.p`
     align-items: center;
     justify-content: center;
     margin-top: 10px;
-	 width: 80%;
+	 
 	 
   }
 `;
@@ -197,7 +201,7 @@ const ParrafoEmail = styled.p`
     align-items: center;
     justify-content: center;
     margin-top: 0;
-    padding-top: 50px;
+    
   }
 `;
 const Email = styled.p`
@@ -215,7 +219,7 @@ const Email = styled.p`
     color: #0096c7;
     font-size: 21px;
     font-weight: 900;
-    margin-top: 10px;
+    margin-top: 20px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -228,8 +232,7 @@ const ContainerIconInicio = styled.div`
 
   @media (max-width: 1000px) {
     flex-direction: row;
-
-    margin-bottom: 20px;
+  margin-bottom: 20px;
     height: 60px;
     width: 90%;
     display: flex;
@@ -238,12 +241,19 @@ const ContainerIconInicio = styled.div`
   }
   @media (max-width: 600px) {
     width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    
+    
+    
   }
 `;
 
 const ContainerIcon = styled.div`
   background-color: #03045e;
-  border-radius: 90%;
+  border-radius: 50%;
   height: 68px;
   width: 70px;
   display: flex;
@@ -251,6 +261,12 @@ const ContainerIcon = styled.div`
   justify-content: center;
   margin-right: 50px;
   margin-top: 30px;
+ @media(max-width:450px){
+height: 60px;
+margin-top: 0;
+margin-right: 0;
+
+ }
 
   .icono {
     font-size: 30px;
@@ -268,6 +284,7 @@ const Button = styled.button`
     font-size: 17px;
     margin-bottom: 50px;
     position: relative;
+    margin-right: 20px;
   }
 
   display: block;
