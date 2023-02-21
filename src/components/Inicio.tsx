@@ -5,7 +5,7 @@ import {delay, easeIn, motion, spring} from "framer-motion"
 const ContainerInicio = styled.div`
   font-family: "Inconsolata", monospace;
   background-color: #023e8a;
-  height: 100vh;
+  min-height: 100vh;
   margin-left: 450px;
   display: flex;
   align-items: flex-start;
@@ -41,7 +41,7 @@ const ContainerName = styled.div`
   align-content: flex-start;
   justify-content: flex-start;
   flex-wrap: wrap;
-  width: 80%;
+  
   @media (max-widt: 1590px) {
     display: flex;
     justify-content: flex-start;

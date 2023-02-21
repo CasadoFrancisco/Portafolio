@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import LogoPortada from "../assets/LogoPortafolio.jpeg";
 
 const NavbarContainer = styled.div`
@@ -244,7 +244,7 @@ export const NavbarComponent: React.FC<{}> = () => {
   const [isOpen, setIsOpen] = useState(false);
   const handleMenu = () => {
     setIsOpen(!isOpen);
-    console.log(isOpen);
+    
   };
   return (
     <NavbarContainer>
@@ -252,19 +252,19 @@ export const NavbarComponent: React.FC<{}> = () => {
         <NavbarImg src={LogoPortada} alt="LogoPortada" />
       </NavbarContainerImg>
       <NavbarContainerLinks isOpen={isOpen}>
-        <NavbarLinks href="#inicio">Inicio</NavbarLinks>
-        <NavbarLinks href="#sobremi">Sobre mi</NavbarLinks>
-        <NavbarLinks href="#portafolio">Portafolio</NavbarLinks>
-        <NavbarLinks href="#educacion">Educacion</NavbarLinks>
-        <NavbarLinks href="#skills">Skills</NavbarLinks>
-        <NavbarLinks href="#contacto">Contacto</NavbarLinks>
+        <NavbarLinks href="#inicio" onClick={handleMenu}>Inicio</NavbarLinks>
+        <NavbarLinks href="#sobremi" onClick={handleMenu}>Sobre mi</NavbarLinks>
+        <NavbarLinks href="#portafolio" onClick={handleMenu}>Portafolio</NavbarLinks>
+        <NavbarLinks href="#educacion" onClick={handleMenu}>Educacion</NavbarLinks>
+        <NavbarLinks href="#skills" onClick={handleMenu}>Skills</NavbarLinks>
+        <NavbarLinks href="#contacto" onClick={handleMenu}>Contacto</NavbarLinks>
       </NavbarContainerLinks>
       <ContainerTitulo>
         <TituleUno>Porta</TituleUno>
         <TituleDos>folio</TituleDos>
       </ContainerTitulo>
-      <Label htmlFor="burger">
-        <input id="burger" type="checkbox" onClick={handleMenu} />
+    <Label htmlFor="burger" >
+        <input id="burger" type="checkbox" onClick={handleMenu}/>
         <span></span>
         <span></span>
         <span></span>
