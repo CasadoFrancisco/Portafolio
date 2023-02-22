@@ -24,6 +24,7 @@ const NavbarContainer = styled.div`
     justify-content: space-between;
     position: fixed;
     width: 100%;
+    padding-bottom: 0;
   } 
   @media (max-width: 1000px) {
     background-color: #0077b6;
