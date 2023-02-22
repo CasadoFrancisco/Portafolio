@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 import LogoPortada from "../assets/LogoPortafolio.jpeg";
 
 const NavbarContainer = styled.div`
@@ -13,9 +13,8 @@ const NavbarContainer = styled.div`
   height: 100%;
   width: 450px;
   font-family: "Inconsolata", monospace;
-  
   position: fixed;
-  
+  padding-bottom: 20px;
   @media (max-width: 800px) {
     background-color: #0077b6;
     display: flex;
@@ -40,7 +39,10 @@ const NavbarContainer = styled.div`
 `;
 const NavbarContainerImg = styled.div`
   
- 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
   
     margin-top: 100px;
    @media (max-width: 1000px) {
@@ -52,8 +54,8 @@ const NavbarContainerImg = styled.div`
   }
 `;
 const NavbarImg = styled.img`
-   width: 300px;
-    height:300px;
+   width: 200px;
+    height:200px;
     border-radius: 50%;
   @media (max-width: 1000px) {
     width: 72px;
@@ -68,6 +70,13 @@ const NavbarImg = styled.img`
   } 
 `;
 const NavbarContainerLinks = styled.div<{ isOpen: boolean }>`
+display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
+    padding-bottom: 45px;
+   
   @media (max-width: 1000px) {
     position: absolute;
     background-color: #0077b6;
@@ -78,15 +87,10 @@ const NavbarContainerLinks = styled.div<{ isOpen: boolean }>`
     flex-direction: column;
     transition: 1s;
     margin-top: 0;
-    
+    padding-bottom: 0;
   }
-  
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 40px;
-    align-items: center;
-  
+    
+    
 `;
 
 const NavbarLinks = styled.a`
@@ -239,6 +243,14 @@ const Label = styled.label`
     left: 5px;
   }
 `;
+const routesLink = [
+  {name:"Inicio", link:"#inicio"},
+  {name:"Sobre mi",link:"#sobremi"},
+  {name:"Portafolio",link:"#portafolio"},
+  {name:"Educacion",link:"#educacion"},
+  {name:"Skills",link:"#skills"},
+  {name:"Contacto",link:"#contacto"}
+]
 
 export const NavbarComponent: React.FC<{}> = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -252,19 +264,18 @@ export const NavbarComponent: React.FC<{}> = () => {
         <NavbarImg src={LogoPortada} alt="LogoPortada" />
       </NavbarContainerImg>
       <NavbarContainerLinks isOpen={isOpen}>
-        <NavbarLinks href="#inicio" onClick={handleMenu}>Inicio</NavbarLinks>
-        <NavbarLinks href="#sobremi" onClick={handleMenu}>Sobre mi</NavbarLinks>
-        <NavbarLinks href="#portafolio" onClick={handleMenu}>Portafolio</NavbarLinks>
-        <NavbarLinks href="#educacion" onClick={handleMenu}>Educacion</NavbarLinks>
-        <NavbarLinks href="#skills" onClick={handleMenu}>Skills</NavbarLinks>
-        <NavbarLinks href="#contacto" onClick={handleMenu}>Contacto</NavbarLinks>
+        {routesLink.map(({name,link})=>(
+          <NavbarLinks href={link} key={link} onClick={handleMenu}>
+            {name}
+          </NavbarLinks>
+        ))}
       </NavbarContainerLinks>
       <ContainerTitulo>
         <TituleUno>Porta</TituleUno>
         <TituleDos>folio</TituleDos>
       </ContainerTitulo>
     <Label htmlFor="burger" >
-        <input id="burger" type="checkbox" onClick={handleMenu}/>
+        <input id="burger" type="checkbox" checked={isOpen} onClick={handleMenu}/>
         <span></span>
         <span></span>
         <span></span>

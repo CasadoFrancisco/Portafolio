@@ -14,7 +14,7 @@ const ContainerInicio = styled.div`
   padding-left: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
-
+  
   @media (max-width: 1000px) {
     display: flex;
     flex-direction: column;
@@ -22,6 +22,7 @@ const ContainerInicio = styled.div`
     justify-content: center;
     background-color: #023e8a;
     font-family: "Inconsolata", monospace;
+    padding-top: 100px;
     margin-left: 0;
     padding-left: 10px;
   }
@@ -73,6 +74,9 @@ const NameOne = styled.h1`
   color: #90e0ef;
   width: 55%;
   margin-right: 40px;
+  @media(max-width:1290px){
+   font-size:100px ;
+  }
 
   @media (max-width: 1180px) {
     font-size: 90px;
@@ -91,6 +95,9 @@ const NameTwo = styled.h1`
   font-size: 130px;
   color: #ffba08;
   width: 400px;
+  @media(max-width:1290px){
+   font-size:100px ;
+  }
 
   @media (max-width: 1138px) {
     font-size: 90px;
@@ -178,7 +185,6 @@ const Img = styled.img``;
 const ContainerIfYouLike = styled.div`
   flex-direction: column;
   display: flex;
-
   width: 40vw;
   @media (max-width: 1000px) {
     display: flex;
@@ -193,6 +199,9 @@ const ParrafoEmail = styled.p`
   margin-top: 50px;
   font-weight: 700;
   color: #90e0ef;
+  @media(max-width:1290px){
+   margin-top: 0;
+  }
   @media (max-width: 1000px) {
     font-size: 30px;
     font-weight: 700;
@@ -262,6 +271,9 @@ const ContainerIcon = styled.div`
   justify-content: center;
   margin-right: 50px;
   margin-top: 30px;
+  @media(max-width:1290px){
+  margin-top: 25px;
+  }
  @media(max-width:450px){
 height: 60px;
 margin-top: 0;
@@ -280,6 +292,9 @@ margin-right: 0;
   }
 `;
 const Button = styled.button`
+@media(max-width:1290px){
+   margin-top: 50px;
+  }
   @media (max-width: 1000px) {
     margin-top: 20px;
     font-size: 17px;

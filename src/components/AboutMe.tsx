@@ -56,6 +56,7 @@ const ContainerAbout = styled.div`
     margin-left: 0;
     padding-left: 50px;
     padding-bottom: 40px;
+    padding-top: 90px;
   }
   @media (max-width: 500px) {
     height: 100%;
