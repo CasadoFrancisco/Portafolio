@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import styled from "styled-components";
-import {delay, easeIn, motion, spring} from "framer-motion"
+
 
 const ContainerInicio = styled.div`
   font-family: "Inconsolata", monospace;
@@ -14,7 +14,7 @@ const ContainerInicio = styled.div`
   padding-left: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
-  
+
   @media (max-width: 1000px) {
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@ const ContainerName = styled.div`
   align-content: flex-start;
   justify-content: flex-start;
   flex-wrap: wrap;
-  
+
   @media (max-widt: 1590px) {
     display: flex;
     justify-content: flex-start;
@@ -52,7 +52,6 @@ const ContainerName = styled.div`
     margin-top: 1px;
   }
   @media (max-width: 1000px) {
-    
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -63,19 +62,14 @@ const ContainerName = styled.div`
     align-items: center;
     justify-content: center;
   }
-
-  
-
-  
-  
 `;
 const NameOne = styled.h1`
   font-size: 130px;
   color: #90e0ef;
   width: 55%;
   margin-right: 40px;
-  @media(max-width:1290px){
-   font-size:100px ;
+  @media (max-width: 1290px) {
+    font-size: 100px;
   }
 
   @media (max-width: 1180px) {
@@ -95,8 +89,8 @@ const NameTwo = styled.h1`
   font-size: 130px;
   color: #ffba08;
   width: 400px;
-  @media(max-width:1290px){
-   font-size:100px ;
+  @media (max-width: 1290px) {
+    font-size: 100px;
   }
 
   @media (max-width: 1138px) {
@@ -112,14 +106,13 @@ const NameTwo = styled.h1`
     align-items: center;
     justify-content: center;
   }
-`;					
+`;
 const ContainerBienvenido = styled.div`
   flex-direction: row;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
-   
 
   @media (max-width: 1613px) {
     display: flex;
@@ -131,7 +124,6 @@ const ContainerBienvenido = styled.div`
     align-items: center;
     justify-content: center;
     width: 80%;
-   
   }
 `;
 const ParrafoOne = styled.p`
@@ -153,8 +145,6 @@ const ParrafoOne = styled.p`
     align-items: center;
     justify-content: center;
     margin-top: 10px;
-	 
-	 
   }
 `;
 const ParrafoTwo = styled.div`
@@ -199,8 +189,8 @@ const ParrafoEmail = styled.p`
   margin-top: 50px;
   font-weight: 700;
   color: #90e0ef;
-  @media(max-width:1290px){
-   margin-top: 0;
+  @media (max-width: 1290px) {
+    margin-top: 0;
   }
   @media (max-width: 1000px) {
     font-size: 30px;
@@ -211,7 +201,6 @@ const ParrafoEmail = styled.p`
     align-items: center;
     justify-content: center;
     margin-top: 0;
-    
   }
 `;
 const Email = styled.p`
@@ -242,7 +231,7 @@ const ContainerIconInicio = styled.div`
 
   @media (max-width: 1000px) {
     flex-direction: row;
-  margin-bottom: 20px;
+    margin-bottom: 20px;
     height: 60px;
     width: 90%;
     display: flex;
@@ -255,9 +244,6 @@ const ContainerIconInicio = styled.div`
     align-items: center;
     justify-content: space-around;
     padding-top: 20px;
-    
-    
-    
   }
 `;
 
@@ -271,15 +257,14 @@ const ContainerIcon = styled.div`
   justify-content: center;
   margin-right: 50px;
   margin-top: 30px;
-  @media(max-width:1290px){
-  margin-top: 25px;
+  @media (max-width: 1290px) {
+    margin-top: 25px;
   }
- @media(max-width:450px){
-height: 60px;
-margin-top: 0;
-margin-right: 0;
-
- }
+  @media (max-width: 450px) {
+    height: 60px;
+    margin-top: 0;
+    margin-right: 0;
+  }
 
   .icono {
     font-size: 30px;
@@ -292,8 +277,8 @@ margin-right: 0;
   }
 `;
 const Button = styled.button`
-@media(max-width:1290px){
-   margin-top: 50px;
+  @media (max-width: 1290px) {
+    margin-top: 50px;
   }
   @media (max-width: 1000px) {
     margin-top: 20px;
@@ -432,7 +417,7 @@ export const InicioComponent: React.FC = () => {
       </ContainerBienvenido>
       <ContainerIfYouLike>
         <ParrafoEmail>
-          Si te gusto el portafolio y te queres contactar conmigo escribeme a:{" "}
+          Si te gusto el portafolio y te queres contactar conmigo escribeme a:
         </ParrafoEmail>
         <Email>casadofranciscoromero@gmail.com</Email>
       </ContainerIfYouLike>
