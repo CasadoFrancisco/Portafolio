@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import LogoPortada from "../assets/LogoPortafolio.jpeg";
+import LogoPortada from "../assets/image.png";
 
 const NavbarContainer = styled.div`
   
